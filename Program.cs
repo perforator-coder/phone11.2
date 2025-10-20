@@ -10,7 +10,7 @@ namespace phone11._2
     {
         static void Main(string[] args)
         {
-            phone input_class = new phone();
+            phone input_class = new phone("test",50);
             Console.Write("Введите бренд телефона:");
             string input_brand = Console.ReadLine();
             Console.Write("Введите заряд телефона:");
@@ -18,8 +18,8 @@ namespace phone11._2
                 Console.WriteLine("Ошибка: Некорректый ввод.");
                 return;
             }
-            input_class.Brand = input_brand;
-            input_class.Bat = input_bat;
+           // input_class.Brand = input_brand;
+            //input_class.Bat = input_bat;
             input_class.Use();
             input_class.Use();
 

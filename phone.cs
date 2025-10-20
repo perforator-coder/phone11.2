@@ -13,7 +13,12 @@ namespace phone11._2
         private bool error_brand;
         private bool error_bat;
 
-
+        public phone(string input_name,int bat) { 
+            Brand = input_name;
+            Bat = bat;
+        }
+        public phone() {
+        }
         public string Brand {
             get { return brand; }
             set {
